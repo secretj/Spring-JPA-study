@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 //CTRL+SHIFT+T 테스트작성 단축키
-@Service
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
     //memberRepository는 전역적으로 같이 쓰는 객체기 때문에 새롭게 생성하지않고 기존에 생성된 memberRepository를 주입하여 사용한다.
-    @Autowired
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
