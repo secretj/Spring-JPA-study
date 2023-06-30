@@ -1,5 +1,6 @@
 
 ## 인프런 김영한 스프링 복습 강의
+강의노트 https://secretj.notion.site/Spring-boot-1-0a79b78f4f4c4d38964ec136f180e5f4?pvs=4
 
 230625 시작
 
