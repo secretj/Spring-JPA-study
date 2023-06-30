@@ -2,7 +2,7 @@ package hello.hellospring.domain;
 
 import javax.persistence.*;
 
-@Entity
+@Entity //JPA 맵핑
 public class Member {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //IDENTITY:  DB가 알아서 값을 넣어주는거 (EX.시퀀스번호같은거)
     private Long id;
