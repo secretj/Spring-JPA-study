@@ -4,11 +4,13 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 //CTRL+SHIFT+T 테스트작성 단축키
 //@Service
+@Transactional   //JPA는 모든 데이터의 변경이 Transactional안에서 실행되어야한다.
 public class MemberService {
 
     private final MemberRepository memberRepository;
