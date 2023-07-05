@@ -22,12 +22,12 @@ public class MemberService {
     /**
      * 회원가입
      **/
-    public Long join(Member member){
+    public Long join(Member member) {
         //같은 이름이 있는 중복 회원X -> CTRL+ALT+M하면 메소드로 따로 빼준다.(extract method 기능)
-        validateDuplicateMember(member);
+            validateDuplicateMember(member);
 
-        memberRepository.save(member);
-        return member.getId();
+            memberRepository.save(member);
+            return member.getId();
     }
 
     private void validateDuplicateMember(Member member) {
@@ -36,12 +36,11 @@ public class MemberService {
                          throw new IllegalStateException("이미 존재하는 회원입니다.");
                     });
     }
-
     /**
      * 전체 회원 조회
      */
-    public List<Member> findMembers(){
-            return memberRepository.findAll();
+    public List<Member> findMembers() {
+        return memberRepository.findAll();
     }
 
     public Optional<Member> findOne(Long memberId){
