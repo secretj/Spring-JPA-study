@@ -2,12 +2,12 @@
 # 🐜 Spring과 JPA STUDY 🐝
 
 ### 📝학습노트
- [`꽉 채울거야!  지식 창고 -Spring 공부`]([https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4])
+ [`꽉 채울거야!  지식 창고 -Spring 공부`](https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
 <br>
 
 ### 💻 강의 목록
-  - [`인프런 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 -김영한`]([(https://inf.run/sZQ4)])
-  - [`인프런 -스프링 데이터 JPA -백기선`]([(https://inf.run/gU1f)])
+  - [`인프런 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 -김영한`](https://inf.run/sZQ4)
+  - [`인프런 -스프링 데이터 JPA -백기선`](https://inf.run/gU1f)
 
 <br>
 
