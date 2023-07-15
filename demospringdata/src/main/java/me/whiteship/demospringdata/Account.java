@@ -3,7 +3,7 @@ package me.whiteship.demospringdata;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "myAccount")
+@Entity//(name = "myAccount")
 @Table
 public class Account {
     @Id @GeneratedValue
@@ -18,6 +18,12 @@ public class Account {
 
     @Transient
     private String no;
+
+    @Embedded
+    @AttributeOverrides({
+            @AttributeOverride(name="street", column = @Column(name="home_street"))
+    })
+    private Address Address;
 
     public Long getId() {
         return id;
