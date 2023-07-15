@@ -1,5 +1,5 @@
 
-# 🐜 Spring과 JPA STUDY 🐝
+# 🐜 Spring, JPA STUDY 🐝
 
 ### 📝학습노트
  Link - [`꽉 채울거야!  지식 창고 - Spring 공부`](https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
