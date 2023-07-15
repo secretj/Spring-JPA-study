@@ -1,8 +1,8 @@
 
 # 🐜 Spring과 JPA STUDY 🐝
 
-### 📝학습노트 [https://secretj.notion.site/Spring-boot-1-0a79b78f4f4c4d38964ec136f180e5f4?pvs=4](https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
-
+### 📝학습노트
+ [`꽉 채울거야!  지식 창고 -Spring 공부`]([https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
 <br>
 
 ### 💻 강의 목록
