@@ -1,6 +1,15 @@
 
-## Spring과 JPA 학습
-학습노트 [https://secretj.notion.site/Spring-boot-1-0a79b78f4f4c4d38964ec136f180e5f4?pvs=4](https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
+# 🐜 Spring과 JPA STUDY 🐝
+
+### 📝학습노트 [https://secretj.notion.site/Spring-boot-1-0a79b78f4f4c4d38964ec136f180e5f4?pvs=4](https://www.notion.so/secretj/de13558d517c49dfa201b9b2ee4ef1fa?v=9a56cc45dbb6457cbb5abf3def4ef061&pvs=4)
+
+<br>
+
+### 💻 강의 목록
+  - [`인프런 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술 -김영한`]([[https://github.com/JuHyun419/study/tree/master/books%26lectures/(%ED%8C%A8%EC%BA%A0)secret-SpringBoot-JPA](https://inf.run/gU1f)](https://inf.run/sZQ4))
+  - [`인프런 -스프링 데이터 JPA -백기선`]([https://github.com/JuHyun419/study/tree/master/books%26lectures/(%ED%8C%A8%EC%BA%A0)secret-SpringBoot-JPA](https://inf.run/gU1f))
+
+<br>
 
 230625 시작
 
