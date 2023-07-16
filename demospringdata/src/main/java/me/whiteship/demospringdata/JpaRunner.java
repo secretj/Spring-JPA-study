@@ -8,6 +8,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.List;
 
 @Component
 @Transactional
@@ -17,16 +23,41 @@ public class JpaRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws  Exception{
-       /* Account account = new Account();
+//  Native 쿼리 작성
+        List<Post> posts= entityManager.createNativeQuery("Select * from Post", Post.class).getResultList();
+        posts.forEach(System.out::println);
+
+
+/* Criteria 쿼리 작성
+        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Post> query = builder.createQuery(Post.class);
+        Root<Post> root = query.from(Post.class);
+        query.select(root);
+
+        List<Post> posts = entityManager.createQuery(query).getResultList();
+        posts.forEach(System.out::println);
+*/
+
+
+/* JPQL 쿼리 작성
+        //Type을 지정해주고 쿼리를 짤 수 있음
+        TypedQuery<Post> query = entityManager.createQuery("SELECT p FROM Post As p", Post.class);
+        List<Post> posts = query.getResultList();
+        posts.forEach(System.out::println); //Post 클래스에 toString 메소드를 만들어 놨기 때문에 주소값이 아닌 텍스트로 콘솔에 표출
+*/
+/* 엔티티와 value 맵핑
+        Account account = new Account();
         account.setUsername("whiteship");
         account.setPassword("hibernate");
 
         Study study = new Study();
         study.setName("Spring Data JPA");
 
-        account.addStudy(study);*/
+        account.addStudy(study);
+*/
 
-        Post post = new Post();
+/*관계 맵핑
+       Post post = new Post();
         post.setTitle("Spring Data JPA 어려워요");
 
         Comment comment = new Comment();
@@ -40,8 +71,9 @@ public class JpaRunner implements ApplicationRunner {
 
         Session session = entityManager.unwrap(Session.class);
         session.save(post);
-/*        session.save(account);
-        session.save(study);*/
+        session.save(account);
+        session.save(study);
+*/
     }
 
 }
