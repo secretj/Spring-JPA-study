@@ -12,7 +12,7 @@
 
 <br>
 
-### :star2: Study History
+### :star2: Study Commit History
 
 - 230625 시작
 
@@ -37,4 +37,6 @@
 - 230715 JPA 프로그래밍 엔티티 맵핑 및 JPA 설정
 
 - 230716 VALUE 타입 맵핑
+
+- 230716 관계 맵핑과 Cascade 옵션
   
