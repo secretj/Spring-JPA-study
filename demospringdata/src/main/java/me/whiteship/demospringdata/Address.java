@@ -1,7 +1,6 @@
 package me.whiteship.demospringdata;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 
 @Embeddable
 public class Address {
