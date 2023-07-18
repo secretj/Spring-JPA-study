@@ -23,10 +23,17 @@ public class JpaRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws  Exception{
-//  Native 쿼리 작성
+// JPQL 쿼리 작성
+        //Type을 지정해주고 쿼리를 짤 수 있음
+        TypedQuery<Post> query = entityManager.createQuery("SELECT p FROM Post As p", Post.class);
+        List<Post> posts = query.getResultList();
+        posts.forEach(System.out::println); //Post 클래스에 toString 메소드를 만들어 놨기 때문에 주소값이 아닌 텍스트로 콘솔에 표출
+/*
+  Native 쿼리 작성
         List<Post> posts= entityManager.createNativeQuery("Select * from Post", Post.class).getResultList();
         posts.forEach(System.out::println);
 
+*/
 
 /* Criteria 쿼리 작성
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
@@ -39,12 +46,7 @@ public class JpaRunner implements ApplicationRunner {
 */
 
 
-/* JPQL 쿼리 작성
-        //Type을 지정해주고 쿼리를 짤 수 있음
-        TypedQuery<Post> query = entityManager.createQuery("SELECT p FROM Post As p", Post.class);
-        List<Post> posts = query.getResultList();
-        posts.forEach(System.out::println); //Post 클래스에 toString 메소드를 만들어 놨기 때문에 주소값이 아닌 텍스트로 콘솔에 표출
-*/
+
 /* 엔티티와 value 맵핑
         Account account = new Account();
         account.setUsername("whiteship");
