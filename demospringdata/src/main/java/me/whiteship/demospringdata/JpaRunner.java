@@ -1,6 +1,7 @@
 package me.whiteship.demospringdata;
 
 import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -18,16 +19,32 @@ import java.util.List;
 @Component
 @Transactional
 public class JpaRunner implements ApplicationRunner {
-    @PersistenceContext
-    EntityManager entityManager;
+  /*  @PersistenceContext
+    EntityManager entityManager;*/
+    @Autowired
+    PostRepository postRepository;
 
     @Override
     public void run(ApplicationArguments args) throws  Exception{
-// JPQL 쿼리 작성
+
+        Post post = new Post();
+        post.setTitle("Spring");
+
+        Comment comment = new Comment();
+        comment.setComment("Hello");
+
+        postRepository.save(post);
+
+
+
+
+        /* JPQL 쿼리 작성
         //Type을 지정해주고 쿼리를 짤 수 있음
         TypedQuery<Post> query = entityManager.createQuery("SELECT p FROM Post As p", Post.class);
         List<Post> posts = query.getResultList();
         posts.forEach(System.out::println); //Post 클래스에 toString 메소드를 만들어 놨기 때문에 주소값이 아닌 텍스트로 콘솔에 표출
+*/
+
 /*
   Native 쿼리 작성
         List<Post> posts= entityManager.createNativeQuery("Select * from Post", Post.class).getResultList();
